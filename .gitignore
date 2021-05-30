@@ -24,3 +24,13 @@ yarn-error.log*
 
 ### Ignore Prettier
 .prettierignore
+
+### Ignore DEV configs
+.babelrc
+
+### Ignore SASS/SCSS files
+src/styles/**/*
+src/styles/**/*scss
+src/styles
+**/*.scss
+*.scss
