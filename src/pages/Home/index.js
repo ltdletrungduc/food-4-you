@@ -1,6 +1,17 @@
 import React from "react";
 import Button from "../../components/common/Button";
 import Container from "../../components/common/Container";
+import PromoProduct from "../../components/PromoProduct";
+
+const mockProduct = [
+	{
+		id: 1234,
+		name: "Product Name",
+		des: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do",
+		imgSrc: "product_1@0,25x.png",
+		imgSrcset: {},
+	},
+];
 const Home = () => {
 	return (
 		<div className='homepage'>
@@ -34,6 +45,24 @@ const Home = () => {
 					</div>
 				</Container>
 				<div id='parallelogram'></div>
+			</section>
+			<section className='promo'>
+				<div className='section__title'>
+					<h2 className='font-FTG'>choose &amp; enjoy</h2>
+				</div>
+				<div className='section__des'>
+					<p className='main-font'>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+						eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis
+						ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas
+						accumsan lacus vel facilisis.
+					</p>
+				</div>
+				<div className='test-promo-slider'>
+					<PromoProduct></PromoProduct>
+					<PromoProduct></PromoProduct>
+					<PromoProduct></PromoProduct>
+				</div>
 			</section>
 		</div>
 	);
